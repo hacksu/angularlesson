@@ -3,21 +3,31 @@
 # Installation
 You'll need Node Package Manager to install Angular and it's packages. If you dont have this downloaded yet, it can be downloaded [here](https://nodejs.org/en/).
 After installing node, you can now jump into your local terminal on Mac or Powershell on windows. Without navigating anywhere, run the following command:
-```npm install @angular/cli -g```
+```
+npm install @angular/cli -g
+```
 which will install Angular globally on your computer. To then check that it installed correctly, run
-```ng v```.
+```
+ng v
+```
 
 # Creating a New Project
 We are now ready to create your local project! This can be done using this command:
-```ng new projectName --routing --style=scss```
+```
+ng new projectName --routing --style=scss
+```
 and will initialize a new project with routing (don't worry about this yet!) and the stylesheet will be SASS instead of CSS. SASS is basically css with a bunch of added utility on top of it. It doesn't need to be used, but is recommended.
 
 Now you can check out your new website! Navigate to the file which you just created and run
-```ng serve -o``` 
+```
+ng serve -o
+``` 
 which will automatically open a new tab when the code is compiled and running of your new website!
 
 Now we can install some Angular libraries which expand on the core functionality of Angular even more. Angular's animation library comes with some really cool animations that we will use as an example but will not be gone over in this lesson very much. To install this library, run this command:
-```npm install --save @angular/animations```
+```
+npm install --save @angular/animations
+```
 Then, once installed successfully, it must be manually included in the /src/app/app.module.ts and imported by adding this line of code to the other imports at the top of the file:
 ```javascript
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,7 +39,9 @@ The app.component.html may now be edited to display whatever we want! Next, we w
 # Creating and Understanding Components
 Components are one of Angular's key features that makes it effiecient and dynamic for easy workflow. A component, very simply, is a building block which an Angular website is built on, which as it grows turns into a web of components where for the most part, each component is a seperate element of a webpage. A page may contain many components, but ultimately a component should accomplish one goal - maybe to show a map on a site, display an about page, or a contact us form.
 To create a component, run the following code:
-```ng generate component home```
+```
+ng generate component home
+```
 where home will be the component! Try creating another for an "about" page!
 
 Now, we can show how that component works to better understand what these are and how they are used. Delete everything besides the router-outlet tags in the app.component.html file and add the new tag:
