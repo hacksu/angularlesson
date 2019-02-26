@@ -51,3 +51,4 @@ Now, we can show how that component works to better understand what these are an
 This will directly link to the new home component that was just created and we can now see that the website will display the html inside the home.component.html inside the home file. You can run the server now (again using ```ng serve -o```) and see that the new site only displays "home works!" as its displaying the code from the home component! Cool!
 
 # Let's Code!
+Here I will be demonstrating how to put it all together with some cool techniques to show off some tools included with Angular!
