@@ -1,55 +1,27 @@
-# Getting Started with Angular!
+# AngularTesting
 
-# Installation
-You'll need Node Package Manager to install Angular and it's packages. If you dont have this downloaded yet, it can be downloaded [here](https://nodejs.org/en/).
-After installing node, you can now jump into your local terminal on Mac or Powershell on windows. Without navigating anywhere, run the following command:
-```
-npm install @angular/cli -g
-```
-which will install Angular globally on your computer. To then check that it installed correctly, run
-```
-ng v
-```
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
-# Creating a New Project
-We are now ready to create your local project! This can be done using this command:
-```
-ng new projectName --routing --style=scss
-```
-and will initialize a new project with routing (don't worry about this yet!) and the stylesheet will be SASS instead of CSS. SASS is basically css with a bunch of added utility on top of it. It doesn't need to be used, but is recommended.
+## Development server
 
-Now you can check out your new website! Navigate to the file which you just created and run
-```
-ng serve -o
-``` 
-which will automatically open a new tab when the code is compiled and running of your new website!
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Now we can install some Angular libraries which expand on the core functionality of Angular even more. Angular's animation library comes with some really cool animations that we will use as an example but will not be gone over in this lesson very much. To install this library, run this command:
-```
-npm install --save @angular/animations
-```
-Then, once installed successfully, it must be manually included in the /src/app/app.module.ts and imported by adding this line of code to the other imports at the top of the file:
-```javascript
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-```
-Then, in addition to this, inside the @NgModule section the name of the module, BrowserAnimationsModule, must also be added in the Imports section. This is a little confusing but order doesn't matter here and it can be imported in whatever order.
+## Code scaffolding
 
-The app.component.html may now be edited to display whatever we want! Next, we will be utilizing routing to display another component's html on the site.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-# Creating and Understanding Components
-Components are one of Angular's key features that makes it effiecient and dynamic for easy workflow. A component, very simply, is a building block which an Angular website is built on, which as it grows turns into a web of components where for the most part, each component is a seperate element of a webpage. A page may contain many components, but ultimately a component should accomplish one goal - maybe to show a map on a site, display an about page, or a contact us form.
-To create a component, run the following code:
-```
-ng generate component home
-```
-where home will be the component! Try creating another for an "about" page!
+## Build
 
-Now, we can show how that component works to better understand what these are and how they are used. Delete everything besides the router-outlet tags in the app.component.html file and add the new tag:
-```html
-<app-home></app-home>
-```
-This will directly link to the new home component that was just created and we can now see that the website will display the html inside the home.component.html inside the home file. You can run the server now (again using ```ng serve -o```) and see that the new site only displays "home works!" as its displaying the code from the home component! Cool!
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-# Let's Code!
-Here I will be demonstrating how to put it all together with some cool techniques to show off some tools included with Angular!
-Clone this repo to your local machine and follow along!
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
