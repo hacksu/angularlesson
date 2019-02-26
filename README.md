@@ -52,3 +52,4 @@ This will directly link to the new home component that was just created and we c
 
 # Let's Code!
 Here I will be demonstrating how to put it all together with some cool techniques to show off some tools included with Angular!
+Clone this repo to your local machine and follow along!
