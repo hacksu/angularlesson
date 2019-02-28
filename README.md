@@ -59,3 +59,5 @@ Be sure that after you clone the repo locally, you run
 npm install
 ```
 to install the needed packages for the provided project. Do not worry about any errors or issues, it should be ok!
+
+To view the complete repository with the rest of the code, click [here](https://github.com/alexpritt/angularLessonComplete)!
