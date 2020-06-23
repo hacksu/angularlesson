@@ -4,18 +4,24 @@
     </div>
 
     <div class = "col">
-      <p>Your bucket list</p>
+      <p>Your bucket list {{ goals.length }}</p>
     </div>
 </div>
 
-<div class = "container colorLight" >
+<div class = "container colorLight" [@goals] = "goals.length">
     <div class = "col">
       <p class = "sm">Use this form to add an item to your bucket list!</p>
-        <!-- Here we will write the groundwork to add an item to our list -->
+        <form>
+          <input type="text" class="txt" name="item" placeholder="Life goal..." [(ngModel)] = "goalText">
+          <input type="submit" class="btn" value="{{ addBtnTxt }}" (click) = "addItem()">
+        </form>
     </div>
 
     <div class = "col">
-        <!-- Here we will write the functionality to remove an item from the list -->
+      <p class = "sm">
+        <p class="lifeContainer" *ngFor = "let goal of goals; let i = index;" (click) = "removeItem(i)"> 
+          {{ goal }}
+        </p>
       </p>
     </div>
 </div>
